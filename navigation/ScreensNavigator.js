@@ -7,6 +7,7 @@ import Login from '../screens/settings/loginregister/login/Login';
 import Feedback from '../screens/settings/feedback/Feedback';
 import GetHelp from '../screens/settings/help/GetHelp';
 import Aboutus from '../screens/settings/about/Aboutus';
+import Contactus from '../screens/settings/contactus/Contactus';
 import Register from '../screens/settings/loginregister/register/Register';
 import EditProfile from '../screens/settings/loginregister/EditProfile';
 import HomeScreen from '../screens/homescreen/HomeScreen';
@@ -62,6 +63,13 @@ export default createStackNavigator({
       title: "About Us"
     }
   },
+  Contactus: {
+    screen: Contactus,
+    navigationOptions: {
+      title: "Contactus"
+    }
+  },
+ 
   Register: {
     screen: Register,
     navigationOptions: {
