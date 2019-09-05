@@ -19,7 +19,10 @@ class Destination extends Component {
     return (
                 <View style={{width:containerWidth, height:containerHeight,minHeight:containerHeight, alignSelf:"center"}}>
                     <View style={{height:imageContainerHeight}}>
-                    <Gallery width={w} height={h} images={destination.placeMediafileList}  onPress={()=>{navigation.navigate('DestinationInfo', { destination: destination })}}/>
+                    <Gallery width={w} height={h} images={destination.placeMediafileList}  
+                    onPress={()=>{
+                      
+                    }}/>
                     </View>
                     <View style={{top:0,alignContent:"center",flex:1, flexDirection:"row", height:informationContainerHeight}}>
                         <View style={{alignItems:"center"}}>
