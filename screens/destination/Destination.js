@@ -4,6 +4,8 @@ import {  Text,  View } from 'native-base';
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Gallery from '../../components/Gallery';
 import { withNavigation } from 'react-navigation';
+import Modal from 'react-native-modal';
+import PopupRequired from '../../components/popuprequired/PopupRequired';
 const { width } = Dimensions.get('window');
 const w = width*0.90;
 const h = 200;
@@ -13,16 +15,33 @@ const imageContainerHeight = 200;
 const informationContainerHeight = 15;
 class Destination extends Component {
   scrollX = new Animated.Value(0);
+
+  state = {
+    isVisible: false
+  }
+
   render() {
     const { item, navigation } = this.props;
     const destination = item;
     return (
                 <View style={{width:containerWidth, height:containerHeight,minHeight:containerHeight, alignSelf:"center"}}>
+                    <Modal 
+                      hasBackdrop 
+                      isVisible={this.state.isVisible} 
+                      onBackdropPress={()=>{
+                        const state = this.state;
+                         state.isVisible = false;
+                         this.setState(state);
+                      }}>
+                      <PopupRequired/>
+                    </Modal>
                     <View style={{height:imageContainerHeight}}>
-                    <Gallery width={w} height={h} images={destination.placeMediafileList}  
-                    onPress={()=>{
-                      
-                    }}/>
+                      <Gallery width={w} height={h} images={destination.placeMediafileList}  
+                      onPress={()=>{
+                         const state = this.state;
+                         state.isVisible = true;//
+                         this.setState(state);
+                      }}/>
                     </View>
                     <View style={{top:0,alignContent:"center",flex:1, flexDirection:"row", height:informationContainerHeight}}>
                         <View style={{alignItems:"center"}}>

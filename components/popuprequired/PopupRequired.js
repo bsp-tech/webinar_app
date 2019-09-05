@@ -7,8 +7,8 @@ export default class PopupRequired extends Component {
             <View>
                 <Text  uppercase={false} note style={{color:'red',fontSize:'24px'}}>
                     Əgər siz bu vieoya baxmaq istəyirsinizsə aşağıdakıları yerinə yetirməlisiz.
-                    </Text>
-                <Text>
+                </Text>
+                <Text style={{color:'red', marginTop:10}}>
                     1.Kanala Abunə olun{"\n"}
                     2.Videonu Paylaşın{"\n"}
                     3.Facebook səhifəsini bəyənin{"\n"}
