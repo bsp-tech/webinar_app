@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
+  "expoServerPort": null,
   "packagerPort": null,
   "packagerPid": null,
-  "expoServerNgrokUrl": "https://4c-c2d.anonymous.task-2.exp.direct",
-  "packagerNgrokUrl": "https://packager.4c-c2d.anonymous.task-2.exp.direct",
-  "ngrokPid": 4048,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "webpackServerPort": 19006
 }

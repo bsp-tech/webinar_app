@@ -6,6 +6,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import SettingsScreen from '../screens/settings/SettingsScreen';
 import HomeScreen from '../screens/homescreen/HomeScreen';
 import DestinationList from '../screens/destination/DestinationList';
+import CategoryList from '../screens/categories/CategoryList';
 
 const SearchStack = createStackNavigator({
     Search: {
@@ -51,9 +52,23 @@ DestinationsStack.navigationOptions = {
   ),
 };
 
+const CategoriesStack = createStackNavigator({
+  CategoryList: CategoryList,
+});
+
+CategoriesStack.navigationOptions = {
+  tabBarLabel: 'Categories',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={'ios-pin'}
+    />
+  ),
+};
+
 
 export default createBottomTabNavigator({
   SearchStack, 
-  DestinationsStack,
+  CategoriesStack,
   SettingsStack
 });

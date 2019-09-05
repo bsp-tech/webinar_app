@@ -37,7 +37,7 @@ class WelcomeNavigation extends Component {
                 </ViewRow>
                         
                 <UIButton onPress={() => {
-                        navigation.navigate('DestinationList')
+                        navigation.navigate('CategoryList')
                     }}
                     text="EXPLORE" style={{marginTop:40, marginBottom:40}}></UIButton>
             </View>
