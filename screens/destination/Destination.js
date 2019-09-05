@@ -27,7 +27,7 @@ class Destination extends Component {
                         </View>
                         <View style={{alignItems:"center", flex:1, flexDirection:"row",position:"absolute", right:5}}>
                             <FontAwesome name="location-arrow" color={'#007BFA'} size={12} />
-                            <Text style={{ color: '#007BFA', fontSize:13 }}> {destination.distance} miles away</Text>
+                            <Text style={{ color: 'red', fontSize:13 }}> {destination.distance} miles away</Text>
                         </View>
                     </View>
                 </View>

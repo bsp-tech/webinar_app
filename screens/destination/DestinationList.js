@@ -3,6 +3,7 @@ import Destination from './Destination';
 import ListPage from '../../components/listpage/ListPage';
 import { connect } from 'react-redux';
 import { setDestinations} from '../../modules/destinations';
+import Seminar from "../seminar/Seminar"
 
 class DestinationList extends React.Component {
 
@@ -13,7 +14,13 @@ class DestinationList extends React.Component {
 
   render(){
     const { destinations } = this.props;
-    return <ListPage list={destinations} renderType={Destination}/>
+    return (
+      <React.Fragment>
+        <Seminar/>
+       <ListPage list={destinations} renderType={Destination}/>
+       </React.Fragment>
+ 
+    )
   }
 
 }
