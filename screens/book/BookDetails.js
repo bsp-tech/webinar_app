@@ -67,7 +67,7 @@ class BookDetails extends Component {
     if(driver)
     return <Label 
             text={"Driver: "+driver.userId.name+" "+driver.userId.surname}
-            icon={<MaterialCommunityIcons name={"steering"} size={20} style={styles.icon} />}/>
+           icon= {<MaterialCommunityIcons name={"steering"} size={20} style={styles.icon} />}/>
     return null;
   }
 
