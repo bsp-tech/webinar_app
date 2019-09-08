@@ -1,17 +1,14 @@
-import React from "react";
-import {
-  View,
-  Dimensions,
-} from "react-native";
 import { Container, Content } from "native-base";
+import React from "react";
+import { Dimensions, View } from "react-native";
 import { withNavigation } from "react-navigation";
 import { connect } from 'react-redux';
-import { setDestinations } from '../../modules/destinations';
-import Gallery from "../../components/Gallery";
-import WelcomeNavigation from "./welcomeNavigation/WelcomeNavigation";
 import Api from "../../api/Api";
-import ImageViewer from "../../components/imageviewer/ImageViewer";
 import images from "../../assets/icons/base64images";
+import Gallery from "../../components/Gallery";
+import ImageViewer from "../../components/imageviewer/ImageViewer";
+import { setDestinations } from '../../modules/destinations';
+import WelcomeNavigation from "./welcomeNavigation/WelcomeNavigation";
 
 let win = Dimensions.get("window");
 const width = win.width;
@@ -33,7 +30,7 @@ class HomeScreen extends React.Component {
   render() {
     const galleryHeight = 220;
     return ( 
-      <Container > 
+      <Container >
         <Content style={{backgroundColor:"#FFF"}}>
                 <View style={{justifyContent:"flex-end"}}>
                     <View style={{backgroundColor:"#FFF",height:70, justifyContent:"flex-end"}}>
