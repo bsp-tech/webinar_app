@@ -67,7 +67,7 @@ export default createStackNavigator({
   Contactus: {
     screen: Contactus,
     navigationOptions: {
-      title: "Contactus"
+      title: "Contact Us"
     }
   },
  
