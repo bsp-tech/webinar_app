@@ -12,6 +12,7 @@
     "@expo/vector-icons": "^10.0.3",
     "base-64": "^0.1.0",
     "expo": "^33.0.0",
+    "expo-font": "^5.0.1",
     "moment": "^2.24.0",
     "native-base": "^2.13.7",
     "react": "16.8.3",

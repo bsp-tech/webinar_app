@@ -64,6 +64,11 @@ class Settings extends React.Component {
                               </TouchableOpacity>
                       }
                       {
+                              <TouchableOpacity onPress={()=>this.switchTo('Contactus')} activeOpacity={1} >
+                                    <SettingsItem text={"Contact Us"}/>
+                              </TouchableOpacity>
+                      }
+                      {
                               <TouchableOpacity onPress={()=>this.switchTo('GetHelp')} activeOpacity={1} >
                                     <SettingsItem text={"Get Help"}/>
                               </TouchableOpacity>
