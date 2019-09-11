@@ -49,7 +49,7 @@ class WelcomeNavigation extends Component {
                   
               
                 <UIButton onPress={() => {
-                        navigation.navigate('DestinationList')
+                        navigation.navigate('CategoryList')
                     }}
                     text="EXPLORE" style={{marginTop:40, marginBottom:20}}></UIButton>
                 <TouchableOpacity  onPress={() => {

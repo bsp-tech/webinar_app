@@ -36,8 +36,8 @@ class App extends React.Component {
       Font.loadAsync({
         // This is the font that we are using for our tab bar
         // ...Icon.Ionicons.font,
-        // Roboto: require("native-base/Fonts/Roboto.ttf"),
-        // Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf"),
+        Roboto: require("native-base/Fonts/Roboto.ttf"),
+        Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf"),
         Ionicons: require("react-native-ionicons/fonts/Ionicons.ttf"),
         // FontAwesome: require('react-native-vector-icons/Fonts/FontAwesome.ttf')
       }),
