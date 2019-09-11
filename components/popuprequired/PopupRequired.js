@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
-import { View,Text } from 'native-base'
+import { View, Text } from 'native-base'
+import StyleSheet from "react-native";
 
 export default class PopupRequired extends Component {
     render() {
         return (
-            <View>
-                <Text  uppercase={false} note style={{color:'red',fontSize:'24px'}}>
+            <View style={{ backgroundColor: 'white', borderRadius: 10 }}>
+                <Text uppercase={false} note style={{fontSize: '24px' }}>
                     Əgər siz bu vieoya baxmaq istəyirsinizsə aşağıdakıları yerinə yetirməlisiz.
                 </Text>
-                <Text style={{color:'red', marginTop:10}}>
+                <Text style={{marginTop: 10 }}>
+                   
                     1.Kanala Abunə olun{"\n"}
                     2.Videonu Paylaşın{"\n"}
                     3.Facebook səhifəsini bəyənin{"\n"}
